@@ -1,0 +1,11 @@
+<% if(phrase["error"]) { %>
+    <h1>There was an error</h1>
+    <p><%= phrase["error"]["message"] %></p>
+<% } else { %>
+    <h2>Original text:</h2>
+    <%= phrase["contents"]["text"] %>
+    <h2>Translated phrase:</h2>
+    <%= phrase["contents"]["translated"] %>
+    <br>
+    <a href="/">Translate another phrase</a>
+<% } %>
